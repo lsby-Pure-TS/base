@@ -4,7 +4,8 @@ export const 单子: unique symbol = Symbol()
 export interface 单子 {
   [单子]: true
 }
-export interface bind {}
-export var bind: bind = (a: any, f: any) => {
-  return a[类型代表].bind(a, f)
-}
+
+export interface bind实现 {}
+export var bind: bind实现 = (a: any, f: any) => {
+  return a[类型代表].bind(a, f);
+};
