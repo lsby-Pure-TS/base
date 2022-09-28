@@ -1,0 +1,19 @@
+{
+  "name": "@lsby/pure-ts-base",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "main": "dist/src/Index.js",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "tsc",
+    "format:all": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
