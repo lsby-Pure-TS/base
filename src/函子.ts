@@ -6,6 +6,6 @@ export interface 函子 {
 }
 
 export interface map实现 {}
-export var map: map实现 = (f: any, a: any) => {
-  return a[类型代表].map(f, a);
+export var map: map实现 = (f: any) => (a: any) => {
+  return a[类型代表].map(f)(a);
 };
