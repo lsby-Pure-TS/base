@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "format:all": "prettier --write .",
     "prepare": "husky install"
   },
@@ -14,6 +14,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@lsby/ts_lambda_type": "^0.0.23",
     "husky": "^7.0.4",
     "typescript": "^4.8.4"
   }
